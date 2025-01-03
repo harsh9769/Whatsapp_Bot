@@ -21,7 +21,7 @@ class Data(db.Model):
 def main():
     
     stations = Data.query.all()
-    return render_template("index.html", stations=stations)
+    return render_template("index1.html", stations=stations)
 
 @app.route("/cost", methods=["POST", "GET"])
 def cost_cal():
@@ -75,4 +75,4 @@ def create_order():
 
 # Run the app
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
