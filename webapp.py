@@ -20,7 +20,7 @@ class Data(db.Model):
 def main():
     
     stations = Data.query.all()
-    return render_template("index1.html", stations=stations)
+    return render_template("index.html", stations=stations)
 
 @app.route("/cost",methods=["POST","GET"])
 def cost_cal():
