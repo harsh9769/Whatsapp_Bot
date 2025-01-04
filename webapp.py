@@ -11,7 +11,7 @@ stations_df = pd.read_csv(data_file)
 def main():
     # Convert the DataFrame to a list of dictionaries and pass it to the template
     stations = stations_df.to_dict(orient='records')
-    return render_template("index.html", stations=stations)
+    return render_template("index1.html", stations=stations)
 
 @app.route("/cost", methods=["POST"])
 def cost_cal():
