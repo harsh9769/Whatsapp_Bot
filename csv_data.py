@@ -1,5 +1,5 @@
 import pandas as pd
-from webapp import app, db, Data
+from api.webapp import app, db, Data
 
 # Correct file path with raw string
 file_path = r"stations_with_lines.csv"
