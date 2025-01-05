@@ -40,6 +40,27 @@ def cost_cal():
             return render_template("error.html", error_msg=error_msg)
     else:
         return "Invalid request method.", 405
+    
+
+@app.route('/about_us.html')
+def about_us():
+    return render_template('about_us.html')
+
+@app.route('/contact_us.html')
+def contact_us():
+    return render_template('contact_us.html')
+
+@app.route('/privacy_policy.html')
+def privacy_policy():
+    return render_template('privacy_policy.html')
+
+@app.route('/terms_and_conditions.html')
+def terms_and_conditions():
+    return render_template('terms_and_conditions.html')
+
+@app.route('/cancellation_refund_policy.html')
+def cancellation_refund_policy():
+    return render_template('cancellation_refund_policy.html')
 
 # Run the app
 if __name__ == "__main__":
